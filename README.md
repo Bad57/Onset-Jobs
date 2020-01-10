@@ -2,7 +2,7 @@
 
 *Module implémentant la possibilité de créer des jobs*
 
-![alt text](https://imgur.com/780b1a89-a68f-471c-a6ca-a6040497a6a2)
+![alt text](https://i.imgur.com/mN4qbBF.png)
 
 ## Pré-requis 
 
