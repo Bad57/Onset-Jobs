@@ -4,10 +4,10 @@
 
 ![alt text](https://i.imgur.com/mN4qbBF.png)
 
-## Pré-requis 
+## Pré-requis ⚙️
 
-Il est nécessaire pour faire fonctionner ce script de posseder un schéma de données similaire :
-![alt text](https://i.imgur.com/eCRNXlt.png)
+* Il est nécessaire pour faire fonctionner ce script de posseder un schéma de données similaire :
+  ![alt text](https://i.imgur.com/eCRNXlt.png)
 
 ## Description 📝
 
@@ -15,7 +15,7 @@ Il est nécessaire pour faire fonctionner ce script de posseder un schéma de do
 * Job de bases integrés    
 * Fonctions scope : Package
 
-## A venir 
+## A venir 🛠️
 
 * Création des groups --> Onset-Group
 
