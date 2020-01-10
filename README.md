@@ -7,6 +7,7 @@
 ## Pré-requis ⚙️
 
 * Il est nécessaire pour faire fonctionner ce script de posseder un schéma de données similaire :
+
   ![alt text](https://i.imgur.com/eCRNXlt.png)
 
 ## Description 📝
