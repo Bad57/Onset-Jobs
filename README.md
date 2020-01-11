@@ -4,19 +4,19 @@
 
 ![alt text](https://i.imgur.com/mN4qbBF.png)
 
-## Pré-requis ⚙️
+## ⚙️ Pré-requis 
 
 * Il est nécessaire pour faire fonctionner ce script de posseder un schéma de données similaire :
 
   ![alt text](https://i.imgur.com/eCRNXlt.png)
 
-## Description 📝
+## 📝 Description 
 
 * Permet de créer tout type de job
 * Job de bases integrés    
 * Fonctions scope : Package
 
-## A venir 🛠️
+## 🛠️ A venir 
 
 * Création des groups --> Onset-Group
 
