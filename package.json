@@ -1,0 +1,12 @@
+{
+    "author": "Bad",
+    "version": "1.0",
+    "server_scripts": [
+    "jobs_list.lua",
+    "jobs.lua
+    ],
+    "client_scripts": [      
+    ],
+    "files": [      
+    ]
+}
