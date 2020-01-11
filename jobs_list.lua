@@ -29,7 +29,7 @@ Cops = {
     groups = {},
     weapons = {},
     model = {},
-    command = "acab"
+    command = "cops"
 }
 
 
