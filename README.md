@@ -16,7 +16,7 @@
 ## 📝 Description 
 
 * Permet de créer tout type de job
-* Job de bases integrés
+* Job de bases intégrés
 * Customisation avancée
 * Functions scope : Package
 
