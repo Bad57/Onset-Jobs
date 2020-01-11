@@ -25,4 +25,4 @@
 📮 Discord : Bad#2024
 
 
-Made with 🖤 By Bad
+Made with 🖤 and a lot of 🍁 By Bad
