@@ -1,4 +1,4 @@
-# Package OnSet - Jobs 📎
+# OnSet Package - Jobs 📎
 
 *This package gives you the ability to create your own jobs*
 
