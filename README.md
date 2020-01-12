@@ -18,6 +18,7 @@
 * Basic jobs already implemented
 * High personalisation
 * Functions scope : Package
+* Groups creation --> [Onset-Group](https://github.com/Bad57/Onset-Groups)
 
 ## Built-in Functions 📚
 
@@ -31,7 +32,6 @@
 
 ## 🛠️ Coming Soon
 
-* Groups creation --> [Onset-Group](https://github.com/Bad57/Onset-Groups)
 * Cloths presets
 * Weapons
 
