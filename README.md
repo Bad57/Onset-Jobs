@@ -11,7 +11,7 @@
   ![data exemple](https://i.imgur.com/eCRNXlt.png)
 
 * If you don't have the required scheme, I linked one here :
-  - https://github.com/frederic2ec/onsetrp
+  - [onsetRp](https://github.com/frederic2ec/onsetrp)
 
 ## 📝 Description 
 
@@ -20,9 +20,19 @@
 * High personalisation
 * Functions scope : Package
 
+## Built-in Functions 📚
+
+* **SetPlayerJob** 
+  * ``` SetPlayerJob(player,jobName) ```
+  * Set the player Job using is id and the name of the job (see *job_list.lua* for details)
+* **FiredPlayer**
+  * ``` FiredPlayer(player)```
+  * Fired the player from his current job
+
+
 ## 🛠️ Coming Soon
 
-* Groups creation --> Onset-Group
+* Groups creation --> [Onset-Group](https://github.com/Bad57/Onset-Groups)
 * Cloths presets
 * Weapons
 
