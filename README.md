@@ -1,32 +1,32 @@
-# Module OnSet - Jobs 📎
+# Package OnSet - Jobs 📎
 
-*Module implémentant la possibilité de créer des jobs*
+*This package gives you the ability to create your own jobs*
 
-![alt text](https://i.imgur.com/co2crFM.png)
+![banner](https://i.imgur.com/co2crFM.png)
 
-## ⚙️ Pré-requis 
+## ⚙️ Requirements 
 
-* Il est nécessaire pour faire fonctionner ce script de posséder un schéma de données similaire :
+* You must have a simmilar data scheme to make this script work* 
 
-  ![alt text](https://i.imgur.com/eCRNXlt.png)
+  ![data exemple](https://i.imgur.com/eCRNXlt.png)
 
-* Si vous ne disposez pas du schéma de données requis :
+* If you don't have the required scheme, I linked one here :
   - https://github.com/frederic2ec/onsetrp
 
 ## 📝 Description 
 
-* Permet de créer tout type de job
-* Job de bases intégrés
-* Customisation avancée
+* Alows you to create any kind of jobs
+* Basic jobs already implemented
+* High personalisation
 * Functions scope : Package
 
-## 🛠️ A venir 
+## 🛠️ Coming Soon
 
-* Création des groups --> Onset-Group
-* Présets vestimentaire
+* Groups creation --> Onset-Group
+* Cloths presets
 * Weapons
 
-### Une idée / Un problème 💡❔
+### An Idea / An issue 💡❔
 
 📮 Discord : Bad#2024
 
