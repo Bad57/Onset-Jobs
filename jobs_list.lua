@@ -1,3 +1,9 @@
+-- To create a custom job just copy and paste an existing one and modify it to your conveniances
+-- Dont forget to add your freshly created job in the Jobs variable at the end of the jobs declaration block
+
+
+--# JOBS DECLARATION 
+
 
 Mayor = {
     name = "Maire",
@@ -33,17 +39,19 @@ Cops = {
 }
 
 
+Jobs = {Mayor,Citizen,Cops} -- Add your new jobs at the end of the list
 
---# Functions
+--# FUCNTIONS
 
-Jobs = {Mayor,Citizen,Cops}
-
+--Adding the custom command for each jobs
 AddEvent("OnPackageStart", function()
     for key, value in pairs(Jobs) do
         JobList[value] = {}
-        AddCommand(value.command, function (player)
-            SetPlayerJob(player,Jobs[key])
-        end)
+        if value.command ~= "" then
+            AddCommand(value.command, function (player)
+                SetPlayerJob(player,Jobs[key])
+            end)
+        end
     end
     print("Jobs initialized...")
 end)
