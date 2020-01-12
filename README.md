@@ -7,8 +7,7 @@
 ## ⚙️ Requirements 
 
 * You must have a simmilar data scheme to make this script work* 
-
-  ![data exemple](https://i.imgur.com/eCRNXlt.png)
+  * ``` PlayerData[Player] = {} ```
 
 * If you don't have the required scheme, I linked one here :
   - [onsetRp](https://github.com/frederic2ec/onsetrp)
