@@ -5,7 +5,8 @@
     "jobs_list.lua",
     "jobs.lua
     ],
-    "client_scripts": [      
+    "client_scripts": [
+        "client.lua"
     ],
     "files": [      
     ]
