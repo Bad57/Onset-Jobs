@@ -2,12 +2,10 @@ JobList = {}
 
 function SetPlayerJob(player,jobName)
     if jobName == nil or PlayerData[player] == nil then return end
-    print(jobName.name)
     if PlayerData[player].job ~= 0 then
         table.remove(JobList[jobName],player)
     end
     for _, v in pairs(JobList[jobName]) do
-        print(v)
         if v == player then return end
     end
     if getLength(JobList[jobName]) >= jobName.max and jobName.max ~= 0 then
@@ -19,6 +17,7 @@ function SetPlayerJob(player,jobName)
         JobList[jobName] = {}
     end
     table.insert(JobList[jobName],player)
+    PlayerClothingPreset(player)
     EquipPlayer(player)
 end
 
@@ -26,6 +25,13 @@ function FiredPlayer(player)
     if PlayerData[player].job == Citizen.name then return end
     SetPlayerJob(player,Citizen)
     AddPlayerChat(player, "You've been fired ! Go find a new job")
+end
+
+function PlayerClothingPreset(player)
+    if PlayerData[player] == nil or PlayerData[player].job == nil then return end
+    local playerJob = PlayerData[player].job
+    local playerModel = Random(1, getLength(playerJob.models))
+    CallRemoteEvent(player,"setClothPreset",tonumber(playerJob.models[playerModel]))
 end
 
 function EquipPlayer(player)
@@ -75,14 +81,6 @@ AddEvent("OnPlayerQuit", function(player)
     for k, v in pairs(JobList) do
         table.remove(JobList[k],player)
     end
-end)
-
-AddCommand("job", function (player)
-    print(PlayerData[player].job.name)
-end)
-
-AddCommand("equip", function (player)
-    EquipPlayer(player)
 end)
 
 

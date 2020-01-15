@@ -12,7 +12,7 @@ Mayor = {
     max = 1,
     groups = {},
     weapons = {},
-    model = {},
+    models = {14},
     command = "mayor"
 }
 
@@ -23,7 +23,7 @@ Citizen = {
     max = 0,
     groups = {},
     weapons = {},
-    model = {},
+    models = {1,2,4,6,7,8},
     command = "citizen"
 }
 
@@ -34,7 +34,7 @@ Cops = {
     max = 12,
     groups = {},
     weapons = {"MP5SD","Glock 17"},
-    model = {},
+    models = {13},
     command = "cops"
 }
 
@@ -46,7 +46,6 @@ Jobs = {Mayor,Citizen,Cops} -- Add your new jobs at the end of the list
 --Adding the custom command for each jobs
 AddEvent("OnPackageStart", function()
     for key, value in pairs(Jobs) do
-        print(value)
         JobList[value] = {}
         if value.command ~= "" then
             AddCommand(value.command, function (player)
