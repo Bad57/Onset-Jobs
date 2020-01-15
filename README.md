@@ -17,9 +17,12 @@
 * Alows you to create any kind of jobs
 * Basic jobs already implemented
 * High personalisation
-* Load declared weapons 
+* Load declared weapons
+* Set player clothing preset 
 * Functions scope : Package
 * Groups creation --> [Onset-Group](https://github.com/Bad57/Onset-Groups)
+
+[default_jobs](https://i.imgur.com/oaM4BJ5.jpg)
 
 ## Built-in Functions 📚
 
@@ -31,13 +34,7 @@
   * Fired the player from his current job
 * **getWeaponByName**
   * ```getWeaponByName(weaponName)```
-  * Get weapon id based on is name 
-  
-
-
-## 🛠️ Coming Soon
-
-* Cloths presets
+  * Get weapon id based on is name  
 
 ### An Idea / An issue 💡❔
 
