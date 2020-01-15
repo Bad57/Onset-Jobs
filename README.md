@@ -22,7 +22,7 @@
 * Functions scope : Package
 * Groups creation --> [Onset-Group](https://github.com/Bad57/Onset-Groups)
 
-[default_jobs](https://i.imgur.com/oaM4BJ5.jpg)
+![default_jobs](https://i.imgur.com/oaM4BJ5.jpg)
 
 ## Built-in Functions 📚
 
