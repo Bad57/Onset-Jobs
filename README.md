@@ -18,7 +18,9 @@
 * Basic jobs already implemented
 * High personalisation
 * Load declared weapons
-* Set player clothing preset 
+* Set player clothing preset
+  * *You can set multiple ClothingPresetId*
+  * *Randmoly pickup one in the list*
 * Functions scope : Package
 * Groups creation --> [Onset-Group](https://github.com/Bad57/Onset-Groups)
 
