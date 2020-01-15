@@ -17,23 +17,27 @@
 * Alows you to create any kind of jobs
 * Basic jobs already implemented
 * High personalisation
+* Load declared weapons 
 * Functions scope : Package
 * Groups creation --> [Onset-Group](https://github.com/Bad57/Onset-Groups)
 
 ## Built-in Functions 📚
 
 * **SetPlayerJob** 
-  * ``` SetPlayerJob(player,jobName) ```
+  * ```SetPlayerJob(player,jobName) ```
   * Set the player Job using is id and the name of the job (see *job_list.lua* for details)
 * **FiredPlayer**
-  * ``` FiredPlayer(player)```
+  * ```FiredPlayer(player)```
   * Fired the player from his current job
+* **getWeaponByName**
+  * ```getWeaponByName(weaponName)```
+  * Get weapon id based on is name 
+  
 
 
 ## 🛠️ Coming Soon
 
 * Cloths presets
-* Weapons
 
 ### An Idea / An issue 💡❔
 
