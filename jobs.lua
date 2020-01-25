@@ -1,7 +1,6 @@
 JobList = {}
 
 function InitPlayerData()
-    --Use it only if you don't have a PlayerData variable
     if PlayerData == nil then
         PlayerData = {}
     end
