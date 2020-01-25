@@ -1,5 +1,12 @@
 JobList = {}
 
+function InitPlayerData()
+    --Use it only if you don't have a PlayerData variable
+    if PlayerData == nil then
+        PlayerData = {}
+    end
+end
+
 function SetPlayerJob(player,jobName)
     if jobName == nil or PlayerData[player] == nil then return end
     if PlayerData[player].job ~= 0 then
@@ -31,6 +38,8 @@ function PlayerClothingPreset(player)
     if PlayerData[player] == nil or PlayerData[player].job == nil then return end
     local playerJob = PlayerData[player].job
     local playerModel = Random(1, getLength(playerJob.models))
+    SetPlayerPropertyValue(player, "_modelPreset", playerModel)
+    
     CallRemoteEvent(player,"setClothPreset",tonumber(playerJob.models[playerModel]))
 end
 
@@ -41,6 +50,7 @@ function EquipPlayer(player)
         SetPlayerWeapon(player, 1, 0, false, i)
     end
     for i, v in ipairs(playerJob.weapons) do
+        if i > 3 then break end
         local weaponId = getWeaponByName(v)
         SetPlayerWeapon(player, weaponId, 30, false, i, false)
     end
@@ -70,6 +80,7 @@ end
 
 AddEvent("OnPlayerSpawn", function(playerid)
     EquipPlayer(player)
+    PlayerClothingPreset(player);
 end)
 
 AddEvent("OnPlayerInitialized", function(player)
@@ -77,12 +88,31 @@ AddEvent("OnPlayerInitialized", function(player)
     SetPlayerJob(player,Citizen)
 end)
 
+function OnPlayerStreamIn(player)
+	local _modelPreset = GetPlayerPropertyValue(player, "_modelPreset")
+	if (_modelPreset ~= nil and _modelPreset > 0) then
+		SetPlayerClothingPreset(player, _modelPreset)
+	end
+end
+AddEvent("OnPlayerStreamIn", OnPlayerStreamIn)
+
 AddEvent("OnPlayerQuit", function(player)
     for k, v in pairs(JobList) do
         table.remove(JobList[k],player)
     end
 end)
 
+function OnPlayerStreamIn(player)
+	local _modelPreset = GetPlayerPropertyValue(player, "_modelPreset")
+	if (_modelPreset ~= nil and _modelPreset > 0) then
+		SetPlayerClothingPreset(player, _modelPreset)
+	end
+end
+AddEvent("OnPlayerStreamIn", OnPlayerStreamIn)
+
+AddEvent("OnPackageStart", function()
+    InitPlayerData()
+end)
 
 
 
